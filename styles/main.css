@@ -76,6 +76,9 @@ p  { margin: 0 0 1rem; }
   background: var(--brass); margin-top: 1rem; opacity: 0.6;
 }
 
+/* The [hidden] attribute must win over component display rules below. */
+[hidden] { display: none !important; }
+
 /* ----------------------------- Buttons --------------------------- */
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
