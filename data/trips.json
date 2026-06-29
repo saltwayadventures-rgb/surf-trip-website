@@ -1,0 +1,142 @@
+{
+  "currency": "USD",
+  "voyages": [
+    {
+      "id": "sumba-secret-breaks",
+      "name": "Sumba — Secret Breaks",
+      "type": "Voyage",
+      "boat": "Trimaran",
+      "days": "6 days",
+      "coordinates": "9.6500° S, 119.2000° E",
+      "region": "West Sumba",
+      "level": "Intermediate–Advanced",
+      "priceFrom": 1500,
+      "badge": "Sold ×2 groups",
+      "summary": "Breaks reachable only from the water. Six days hunting empty lineups along West Sumba's roadless coast.",
+      "spots": ["Pero", "Wainyapu", "Pinnacles", "Kerewei"],
+      "includes": [
+        "Full charter of the trimaran",
+        "Surf, fishing & snorkeling",
+        "Signature on-board cocktails",
+        "Film cameras for guests",
+        "Drone + camera filming",
+        "One finished Reel per guest",
+        "All on-water transfers"
+      ],
+      "image": "assets/voyage-sumba.svg",
+      "alt": "Empty reef break off the roadless coast of West Sumba, viewed from the water"
+    },
+    {
+      "id": "sumbawa-expedition",
+      "name": "Sumbawa — Expedition",
+      "type": "Voyage",
+      "boat": "Trimaran or Yacht",
+      "days": "3–5 days",
+      "coordinates": "8.6500° S, 117.3600° E",
+      "region": "Sumbawa",
+      "level": "Intermediate",
+      "priceFrom": 1400,
+      "badge": null,
+      "summary": "Empty-lineup break hunting along Sumbawa, with the boat chasing the swell day to day.",
+      "spots": ["Hidden points", "Outer reefs"],
+      "includes": [
+        "Charter (trimaran or yacht)",
+        "Break hunting across Sumbawa",
+        "Snorkeling & fishing",
+        "Camera + drone footage",
+        "One finished Reel per guest"
+      ],
+      "image": "assets/voyage-sumbawa.svg",
+      "alt": "Sailing yacht anchored beside an empty Sumbawa lineup at first light"
+    },
+    {
+      "id": "lombok-sumbawa-crossing",
+      "name": "Lombok–Sumbawa — Crossing",
+      "type": "Voyage",
+      "boat": "Trimaran or Yacht",
+      "days": "4–6 days",
+      "coordinates": "8.6500° S, 116.3200° E",
+      "region": "Lombok to Sumbawa",
+      "level": "Intermediate",
+      "priceFrom": 1400,
+      "badge": null,
+      "summary": "An ocean passage with surf stops, open-sea fishing and nights anchored in hidden bays.",
+      "spots": ["Open-sea passage", "Hidden anchorages"],
+      "includes": [
+        "Charter (trimaran or yacht)",
+        "Surf stops along the crossing",
+        "Open-sea fishing",
+        "Nights at anchor in hidden bays",
+        "Camera + drone footage",
+        "One finished Reel per guest"
+      ],
+      "image": "assets/voyage-crossing.svg",
+      "alt": "Trimaran underway on an open-sea crossing between Lombok and Sumbawa at sunset"
+    },
+    {
+      "id": "gland-coaching-voyage",
+      "name": "Gland — Coaching Voyage",
+      "type": "Voyage",
+      "boat": "Trimaran or Yacht",
+      "days": "Multi-day",
+      "coordinates": "8.7200° S, 115.1700° E",
+      "region": "Eastern Indonesia",
+      "level": "All levels chasing progress",
+      "priceFrom": 900,
+      "badge": null,
+      "summary": "Pro coaches, groups split by board and ability, with technique breakdowns and beach + drone filming.",
+      "spots": ["Longboard / mid groups", "Shortboard groups"],
+      "includes": [
+        "Pro surf coaches",
+        "Longboard/mid & shortboard groups split",
+        "Beach + drone filming",
+        "Technique breakdowns",
+        "One finished Reel per guest"
+      ],
+      "image": "assets/voyage-coaching.svg",
+      "alt": "Surf coach reviewing drone footage with a guest on the beach"
+    }
+  ],
+  "days": [
+    {
+      "id": "night-surf",
+      "name": "Night Surf",
+      "type": "Day",
+      "tagline": "Signature",
+      "summary": "Surf under floodlights after dark — our signature evening session.",
+      "priceFromText": "from $110 / person",
+      "image": "assets/day-night-surf.svg",
+      "alt": "Surfer lit by floodlights riding a wave after dark"
+    },
+    {
+      "id": "sunset-sailing",
+      "name": "Sunset Sailing",
+      "type": "Day",
+      "tagline": null,
+      "summary": "An evening sail timed to the light, drinks on deck as the shore falls away.",
+      "priceFromText": "from $110 / person",
+      "image": "assets/day-sunset.svg",
+      "alt": "Trimaran sailing into a golden sunset with guests on deck"
+    },
+    {
+      "id": "yacht-full-day",
+      "name": "Yacht Full Day",
+      "type": "Day",
+      "tagline": null,
+      "summary": "A full day on the water — surf, snorkel, fish and anchor wherever the day takes you.",
+      "priceFromText": "from $300 / person",
+      "image": "assets/day-yacht.svg",
+      "alt": "Yacht anchored in a turquoise bay on a full-day charter"
+    },
+    {
+      "id": "celebration-charters",
+      "name": "Celebration Charters",
+      "type": "Day",
+      "tagline": null,
+      "summary": "Birthdays, Valentine's, corporate days — private charters built around the occasion.",
+      "priceFromText": "price on enquiry",
+      "image": "assets/day-celebration.svg",
+      "alt": "Private celebration charter set up on deck at golden hour"
+    }
+  ]
+}

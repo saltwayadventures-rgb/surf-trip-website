@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="375" viewBox="0 0 600 375" role="img" aria-label="Sunset Sailing">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#102836"/>
+      <stop offset="1" stop-color="#0b1a24"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="375" fill="url(#g)"/>
+  <path d="M0 270 Q 150 247.5, 300 270 T 600 270 V 375 H 0 Z" fill="#c98f4e" opacity="0.12"/>
+  <path d="M0 300 Q 150 277.5, 300 300 T 600 300 V 375 H 0 Z" fill="#f4ece1" opacity="0.08"/>
+  <text x="50%" y="48%" fill="#f4ece1" font-family="Georgia, serif" font-size="33" text-anchor="middle">Sunset Sailing</text>
+  <text x="50%" y="48%" dy="38" fill="#c98f4e" font-family="Arial, sans-serif" font-size="14" letter-spacing="2" text-anchor="middle">PLACEHOLDER — replace</text>
+</svg>

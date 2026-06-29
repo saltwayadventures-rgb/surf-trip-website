@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="On-board life">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#102836"/>
+      <stop offset="1" stop-color="#0b1a24"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <path d="M0 432 Q 200 396, 400 432 T 800 432 V 600 H 0 Z" fill="#c98f4e" opacity="0.12"/>
+  <path d="M0 480 Q 200 444, 400 480 T 800 480 V 600 H 0 Z" fill="#f4ece1" opacity="0.08"/>
+  <text x="50%" y="48%" fill="#f4ece1" font-family="Georgia, serif" font-size="44" text-anchor="middle">On-board life</text>
+  <text x="50%" y="48%" dy="50" fill="#c98f4e" font-family="Arial, sans-serif" font-size="19" letter-spacing="2" text-anchor="middle">PLACEHOLDER — deck / anchor photo</text>
+</svg>
