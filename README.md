@@ -83,7 +83,7 @@ they come in.
 Open `scripts/main.js` and edit the constants at the top:
 
 ```js
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/your-form-id"; // paste yours
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mykqpzaz"; // live Formspree form
 const WHATSAPP_NUMBER    = "";   // empty for now — add intl digits when you have one
 const INSTAGRAM_URL      = "https://instagram.com/saltway";
 const SITE_URL           = "https://saltway.net"; // live domain

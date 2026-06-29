@@ -11,7 +11,7 @@
 
 // PRIORITY 3 — booking endpoint. Paste your Formspree form ID below,
 // e.g. "https://formspree.io/f/abcdwxyz". Netlify Forms users: see README.
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/your-form-id";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mykqpzaz";
 
 // WhatsApp number in international format, digits only (no +, spaces or dashes).
 // Leave empty until you have one — the WhatsApp buttons hide themselves and the
