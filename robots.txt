@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://saltway.example/sitemap.xml
+Sitemap: https://saltway.net/sitemap.xml

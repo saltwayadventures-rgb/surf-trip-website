@@ -14,12 +14,14 @@
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/your-form-id";
 
 // WhatsApp number in international format, digits only (no +, spaces or dashes).
-const WHATSAPP_NUMBER = "6280000000000"; // <-- replace with the real number
+// Leave empty until you have one — the WhatsApp buttons hide themselves and the
+// form falls back to Instagram, so nothing links to a dead number.
+const WHATSAPP_NUMBER = ""; // <-- e.g. "628123456789" when you have it
 
 const INSTAGRAM_URL = "https://instagram.com/saltway";
 
 // Base URL used in structured data (update to your live domain on deploy).
-const SITE_URL = "https://saltway.example";
+const SITE_URL = "https://saltway.net";
 
 /* -----------------------------------------------------------------
    Small helpers
@@ -306,15 +308,23 @@ function populateTripSelect(trips) {
   });
 }
 
+// Is a WhatsApp number configured yet?
+const hasWhatsApp = () => /^\d{6,}$/.test(WHATSAPP_NUMBER);
+
 function whatsappLink(message) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
 function updateWhatsAppButton(tripName, dates) {
+  const btn = $("#whatsapp-btn");
+  if (!btn) return;
+  // No number yet → hide the button so nothing links to a dead chat.
+  if (!hasWhatsApp()) { btn.hidden = true; return; }
+  btn.hidden = false;
   const base = tripName
     ? `Hi Saltway — I'm interested in ${tripName}${dates ? ` (${dates})` : ""}. Could you share availability?`
     : "Hi Saltway — I'd like to know more about your sailing surf voyages.";
-  $("#whatsapp-btn").href = whatsappLink(base);
+  btn.href = whatsappLink(base);
 }
 
 // Open the booking form, optionally pre-filled, and scroll to it.
@@ -369,12 +379,17 @@ function wireForm() {
     submitBtn.textContent = "Sending…";
 
     try {
-      // If the endpoint hasn't been configured yet, fall back to WhatsApp
-      // so the form is never a dead end during setup.
+      // If the endpoint hasn't been configured yet, fall back so the form is
+      // never a dead end during setup: WhatsApp if a number is set, else Instagram.
       if (FORMSPREE_ENDPOINT.includes("your-form-id")) {
         const msg = `New enquiry — ${data.trip}\nName: ${data.name}\nEmail: ${data.email}\nDates: ${data.dates || "flexible"}\nLevel: ${data.level}\nGroup: ${data.groupSize}\n${data.message || ""}`;
-        window.open(whatsappLink(msg), "_blank", "noopener");
-        showSuccess(form, status, "Opening WhatsApp to send your enquiry. (Tip: set FORMSPREE_ENDPOINT in main.js to collect these by email.)");
+        if (hasWhatsApp()) {
+          window.open(whatsappLink(msg), "_blank", "noopener");
+          showSuccess(form, status, "Opening WhatsApp to send your enquiry. (Tip: set FORMSPREE_ENDPOINT in main.js to collect these by email.)");
+        } else {
+          window.open(INSTAGRAM_URL, "_blank", "noopener");
+          showSuccess(form, status, "We're still wiring up enquiries — opening Instagram so you can DM us. (Tip: set FORMSPREE_ENDPOINT in main.js to collect these by email.)");
+        }
         return;
       }
 
@@ -390,7 +405,9 @@ function wireForm() {
         throw new Error("Bad response");
       }
     } catch (err) {
-      status.textContent = "Something went wrong sending the form. Please message us on WhatsApp instead.";
+      status.textContent = hasWhatsApp()
+        ? "Something went wrong sending the form. Please message us on WhatsApp instead."
+        : "Something went wrong sending the form. Please reach us on Instagram @saltway instead.";
       status.classList.add("bad");
     } finally {
       submitBtn.disabled = false;
@@ -410,10 +427,9 @@ function showSuccess(form, status, msg) {
    Boot
    ----------------------------------------------------------------- */
 async function init() {
-  // Footer year + default WhatsApp link work even if data fails to load.
+  // Footer year + WhatsApp button state work even if data fails to load.
   const yr = $("#year"); if (yr) yr.textContent = new Date().getFullYear();
   updateWhatsAppButton();
-  $("#whatsapp-btn") && ($("#whatsapp-btn").href = whatsappLink("Hi Saltway — I'd like to know more about your sailing surf voyages."));
 
   wireForm();
 

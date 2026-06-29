@@ -84,19 +84,21 @@ Open `scripts/main.js` and edit the constants at the top:
 
 ```js
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/your-form-id"; // paste yours
-const WHATSAPP_NUMBER    = "6280000000000";   // intl format, digits only
+const WHATSAPP_NUMBER    = "";   // empty for now — add intl digits when you have one
 const INSTAGRAM_URL      = "https://instagram.com/saltway";
-const SITE_URL           = "https://saltway.example"; // your live domain
+const SITE_URL           = "https://saltway.net"; // live domain
 ```
 
 - **Booking endpoint:** create a free form at [formspree.io](https://formspree.io),
   copy its endpoint (`https://formspree.io/f/abcdwxyz`) into `FORMSPREE_ENDPOINT`.
-  Until you do, the form gracefully falls back to opening WhatsApp with the
-  enquiry pre-filled, so it's never a dead end.
-- **WhatsApp:** set `WHATSAPP_NUMBER` to your number in international format with
-  no `+`, spaces or dashes (e.g. Indonesia `62…`).
-- After deploying, update `SITE_URL` here and the domain in `sitemap.xml`,
-  `robots.txt` and the `og:url` / `canonical` in `index.html`.
+  Until you do, the form gracefully falls back to opening WhatsApp (if a number is
+  set) or Instagram, so it's never a dead end.
+- **WhatsApp:** currently empty, so the WhatsApp buttons are **hidden** and
+  enquiries route to Instagram. When you have a number, set `WHATSAPP_NUMBER` to
+  it in international format with no `+`, spaces or dashes (e.g. Indonesia
+  `628123456789`) — the buttons reappear automatically.
+- The domain is already set to `saltway.net` in `SITE_URL`, `sitemap.xml`,
+  `robots.txt` and the `og:url` / `canonical` tags in `index.html`.
 
 ### Prefer Netlify Forms instead of Formspree?
 
