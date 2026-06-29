@@ -1,0 +1,46 @@
+[
+  {
+    "id": "sumba-jul",
+    "trip": "Sumba — Secret Breaks",
+    "tripId": "sumba-secret-breaks",
+    "boat": "Trimaran",
+    "start": "2026-07-05",
+    "days": 6,
+    "spotsLeft": 1,
+    "priceFrom": 1500,
+    "status": "open"
+  },
+  {
+    "id": "sumbawa-aug",
+    "trip": "Sumbawa — Expedition",
+    "tripId": "sumbawa-expedition",
+    "boat": "Yacht",
+    "start": "2026-08-01",
+    "days": 4,
+    "spotsLeft": 5,
+    "priceFrom": 1400,
+    "status": "open"
+  },
+  {
+    "id": "crossing-sep",
+    "trip": "Lombok–Sumbawa — Crossing",
+    "tripId": "lombok-sumbawa-crossing",
+    "boat": "Trimaran",
+    "start": "2026-09-12",
+    "days": 5,
+    "spotsLeft": 2,
+    "priceFrom": 1400,
+    "status": "almost-full"
+  },
+  {
+    "id": "sumba-oct",
+    "trip": "Sumba — Secret Breaks",
+    "tripId": "sumba-secret-breaks",
+    "boat": "Trimaran",
+    "start": "2026-10-03",
+    "days": 6,
+    "spotsLeft": 0,
+    "priceFrom": 1500,
+    "status": "waitlist"
+  }
+]

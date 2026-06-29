@@ -1,0 +1,57 @@
+{
+  "faq": [
+    {
+      "q": "What level of surfer is Saltway for?",
+      "a": "Most Saltway voyages suit confident intermediate to advanced surfers — many of our breaks are reef setups reachable only from the boat, where you should be comfortable paddling out, reading a lineup and handling overhead waves on your own. The Coaching Voyage is the exception: it splits guests by board and ability, so improving beginners and longboarders are welcome there. If you are unsure where you fit, tell us your honest level when you enquire and we will point you to the right trip."
+    },
+    {
+      "q": "How many guests per trip?",
+      "a": "Every voyage runs small: three to five guests. This keeps the lineup uncrowded, lets the boat move quickly when the swell shifts, and means the on-board experience — meals, filming, coaching — stays genuinely personal."
+    },
+    {
+      "q": "What's included in a voyage?",
+      "a": "A voyage typically includes full charter of the trimaran or yacht, surfing, snorkeling and fishing, on-board meals and signature cocktails, film cameras for guests, drone and camera filming by our team, one finished Reel per guest, and all on-water transfers. Flights to Indonesia, travel insurance and personal surf gear are not included. The exact inclusions for each trip are listed on its card."
+    },
+    {
+      "q": "Which breaks and regions do you sail?",
+      "a": "We sail Eastern Indonesia — primarily Sumba, Sumbawa and Lombok. Because the boat is our base, we focus on remote reef and point breaks that are difficult or impossible to reach by road, and we move with the forecast rather than committing to a fixed spot. Specific named breaks for each voyage are listed on its card, though the final lineup always follows the swell."
+    },
+    {
+      "q": "What's the difference between a Voyage and a Day trip?",
+      "a": "A Voyage is a multi-day expedition — typically three to six days living aboard, chasing swell across a region and anchoring in hidden bays at night. A Day trip is a single session or evening near our home waters: Night Surf under floodlights, a Sunset Sail, a full day on the yacht, or a private celebration charter. Voyages are priced from $900–$1,500 per guest; Days from roughly $110–$300 per person depending on the boat and group size."
+    },
+    {
+      "q": "Who is Saltway not the right fit for?",
+      "a": "Saltway is not the best fit for complete beginners on a standard voyage, for travellers who want a fixed daily itinerary and predictable schedule, or for large groups and party charters. Living aboard a small boat for several days means tight quarters, simple comforts and plans that change with the ocean. If you need guaranteed waves on set dates, full mobile signal, or hotel-style amenities, a land-based surf camp will serve you better. If you want empty lineups, flexibility and a real expedition, you will feel at home."
+    }
+  ],
+  "aggregateRating": {
+    "ratingValue": "5.0",
+    "reviewCount": "12",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "reviews": [
+    {
+      "author": "Marco V.",
+      "rating": "5",
+      "date": "2026-04-18",
+      "title": "Empty lineups, every day",
+      "body": "Six days, not another surfer in sight. The crew read the swell perfectly and the Reel they sent afterwards still gets me messages. Worth every dollar."
+    },
+    {
+      "author": "Lena K.",
+      "rating": "5",
+      "date": "2026-03-02",
+      "title": "A real expedition",
+      "body": "This is not a surf camp with a boat bolted on — it's a proper voyage. Small group, incredible food, and waves you simply cannot reach any other way."
+    },
+    {
+      "author": "Tom R.",
+      "rating": "5",
+      "date": "2026-02-11",
+      "title": "Coaching that stuck",
+      "body": "Did the Coaching Voyage as an improver. Being split by ability made all the difference and the technique breakdowns from the drone footage were gold."
+    }
+  ]
+}
